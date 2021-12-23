@@ -26,7 +26,7 @@ LOCAL_PATH := device/google/bramble
 PRODUCT_SOONG_NAMESPACES += \
     device/google/bramble
 
-DEVICE_PACKAGE_OVERLAYS += device/google/bramble/bramble/overlay
+PRODUCT_PACKAGE_OVERLAYS += device/google/bramble/bramble/overlay
 
 # Audio XMLs for bramble
 
@@ -187,3 +187,23 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     AvoidAppsInCutoutOverlay
+
+# (b/183612348): Enable skia reduceOpsTaskSplitting
+PRODUCT_PROPERTY_OVERRIDES += \
+    renderthread.skia.reduceopstasksplitting=true
+
+# microG
+PRODUCT_PACKAGES += \
+    GmsCore \
+    GsfProxy \
+    MozillaNlpBackend \
+    NominatimNlpBackend \
+    OpenWeatherMapWeatherProvider \
+    FDroid \
+    FakeStore \
+    org.microg.xml \
+    microg-a5k
+
+# Don't include gmap stuff for now
+#    com.google.android.maps.jar \
+#    com.google.android.maps.xml \
