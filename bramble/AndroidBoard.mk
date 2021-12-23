@@ -10,7 +10,7 @@ $(FIRMWARE_MOUNT_POINT):
 	@mkdir -p $(TARGET_OUT_VENDOR)/firmware_mnt
 
 # copy kernel headers to the build tree
-$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr: $(wildcard $(PRODUCT_VENDOR_KERNEL_HEADERS)/*)
+$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr: # $(wildcard $(PRODUCT_VENDOR_KERNEL_HEADERS)/*)
 	rm -rf $@
 	mkdir -p $@/include
 	cp -a $(PRODUCT_VENDOR_KERNEL_HEADERS)/. $@/include
