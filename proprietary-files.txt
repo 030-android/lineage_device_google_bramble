@@ -90,6 +90,7 @@ product/etc/CarrierSettings/cspire_nl.pb
 product/etc/CarrierSettings/cspire_us.pb
 product/etc/CarrierSettings/default.pb
 product/etc/CarrierSettings/dishatt_us.pb
+product/etc/CarrierSettings/cspire_us.pb
 product/etc/CarrierSettings/docomo_jp.pb
 product/etc/CarrierSettings/docomomvno_jp.pb
 product/etc/CarrierSettings/ee_gb.pb
