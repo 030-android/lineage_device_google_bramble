@@ -193,17 +193,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     renderthread.skia.reduceopstasksplitting=true
 
 # microG
-PRODUCT_PACKAGES += \
-    GmsCore \
-    GsfProxy \
-    MozillaNlpBackend \
-    NominatimNlpBackend \
-    OpenWeatherMapWeatherProvider \
-    FDroid \
-    FakeStore \
-    org.microg.xml \
-    microg-a5k
+ROM_BUILDTYPE := MICROG
+include prebuilts/prebuiltapks/microg.mk
 
-# Don't include gmap stuff for now
-#    com.google.android.maps.jar \
-#    com.google.android.maps.xml \
