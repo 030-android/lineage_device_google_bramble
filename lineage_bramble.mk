@@ -19,6 +19,8 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4a (5G)
 PRODUCT_NAME := lineage_bramble
 
+LINEAGE_BUILD := bramble
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
